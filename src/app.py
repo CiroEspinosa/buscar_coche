@@ -25,7 +25,7 @@ year = st.number_input("Año del modelo:", value=70)
 
 
 
-if st.button("Buscar"):
+if st.button("Buscar", type="primary"):
     features = [[efficiency, displacement, horsepower, weight, acceleration, origin_number, year]]
     car_name = model.predict(features)
     st.success(f'El coche más similar en la base de datos es: {car_name[0]}') 
