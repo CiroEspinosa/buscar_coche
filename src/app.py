@@ -1,6 +1,6 @@
+import joblib 
 import streamlit as st
 import pandas as pd
-import joblib 
 from sklearn.preprocessing import StandardScaler
 
 model = joblib.load("model/svm_model.pkl")
